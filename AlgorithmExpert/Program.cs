@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AlgorithmExpert.Easy;
+using System;
 using System.Collections.Generic;
 
 namespace AlgorithmExpert
@@ -24,7 +25,7 @@ namespace AlgorithmExpert
             Console.WriteLine(res);
             #endregion
 
-
+            BinaryTree binaryTree = new BinaryTree(1);
             Console.ReadLine();
         }
     }
