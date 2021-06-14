@@ -56,7 +56,6 @@ namespace AlgorithmExpert
             return -1;
         }
 
-
         public static int GetNthFibonacci(int n)
         {
             if ((n == 0) || (n == 1))
@@ -69,7 +68,6 @@ namespace AlgorithmExpert
             }
 
         }
-
 
         public static int[] BubbleSort(int[] arr)
         {
@@ -90,7 +88,6 @@ namespace AlgorithmExpert
 
             return arr;
         }
-
 
         public static int[] SelectionSort(int[] arr)
         {
