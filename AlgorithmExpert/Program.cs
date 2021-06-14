@@ -125,5 +125,15 @@ namespace AlgorithmExpert
             }
             return arr;
         }
+
+        //
+        public static int[] MergeSort(int[] arr) {
+            if (arr.Length == 0) {
+                return arr;
+            }
+
+
+            return arr;
+        }
     }
 }
