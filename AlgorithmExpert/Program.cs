@@ -58,21 +58,6 @@ namespace AlgorithmExpert
             return -1;
         }
 
-
-        public static int GetNthFibonacci(int n)
-        {
-            if ((n == 0) || (n == 1))
-            {
-                return n;
-            }
-            else
-            {
-                return GetNthFibonacci(n - 1) + GetNthFibonacci(n - 2);
-            }
-
-        }
-
-
         public static int[] BubbleSort(int[] arr)
         {
 
@@ -92,7 +77,6 @@ namespace AlgorithmExpert
 
             return arr;
         }
-
 
         public static int[] SelectionSort(int[] arr)
         {
@@ -131,7 +115,7 @@ namespace AlgorithmExpert
             return arr;
         }
 
-        //
+        // O(nlog(n))
         public static List<int> MergeSort(List<int> unsorted)
         {
             if (unsorted.Count <= 1)
