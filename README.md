@@ -1,3 +1,1 @@
-# identity-core 🚀
-
-![Application screenshot]()
+### Algorithms practice...
