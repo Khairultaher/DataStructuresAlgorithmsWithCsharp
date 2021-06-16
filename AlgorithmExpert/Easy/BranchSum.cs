@@ -27,15 +27,4 @@ namespace AlgorithmExpert.Easy
             CalculateBranchSums(node.Right, newRuningSum, sums);
         }
     }
-
-    public class BinaryTree {
-        public BinaryTree(int value) {
-            this.Value = value;
-            this.Left = null;
-            this.Right = null;
-        }
-        public int Value { get; private set; }
-        public BinaryTree Left { get; set; }
-        public BinaryTree Right { get; set; }
-    }
 }
