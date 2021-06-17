@@ -31,7 +31,7 @@ namespace AlgorithmExpert.Easy
                 stack.Push(new Level(node.Right, depth + 1));
 
             }
-            return 0;
+            return sumOfDepth;
         }
 
         // Average case: when the tree is balanced
