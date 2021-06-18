@@ -8,26 +8,30 @@ namespace AlgorithmExpert.Easy
 {
     public class Node
     {
-        public string name;
-        public List<Node> children = new List<Node>();
+
         public Node(string name)
         {
-            this.name = name;
+            this.Name = name;
+            this.Children = new List<Node>();
         }
+
+        public string Name { get; set; }
+        public List<Node> Children { get; set; }
+
         // O(v + e) time | O(v) space
         public List<string> DepthFirstSearch(List<string> array)
         {
-            array.Add(this.name);
-            for (int i = 0; i < children.Count; i++)
+            array.Add(this.Name);
+            for (int i = 0; i < Children.Count; i++)
             {
-                children[i].DepthFirstSearch(array);
+                Children[i].DepthFirstSearch(array);
             }
             return array;
         }
         public Node AddChild(string name)
         {
             Node child = new Node(name);
-            children.Add(child);
+            Children.Add(child);
             return this;
         }
     }

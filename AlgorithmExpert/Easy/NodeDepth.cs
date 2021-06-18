@@ -51,34 +51,4 @@ namespace AlgorithmExpert.Easy
         }
 
     }
-
-    public class Base
-    {
-        private void Add()
-        {
-            Console.WriteLine("OK");
-        }
-        protected virtual void Add(int a)
-        {
-            Console.WriteLine("OK");
-        }
-        public void Subs()
-        {
-            Console.WriteLine("OK");
-        }
-    }
-
-    public class Child: Base
-    {
-       
-    }
-
-    public class Client
-    {
-        public void Do()
-        {
-            Child child = new Child();
-            child.Subs();
-        }
-    }
 }
