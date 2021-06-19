@@ -1,9 +1,9 @@
-﻿using AlgorithmExpert.Easy;
+﻿using DataStructuresAlgorithms.Easy;
 using System;
 using System.Collections.Generic;
-using AlgorithmExpert.Basic;
+using DataStructuresAlgorithms.Basic;
 
-namespace AlgorithmExpert
+namespace DataStructuresAlgorithms
 {
     class Program
     {

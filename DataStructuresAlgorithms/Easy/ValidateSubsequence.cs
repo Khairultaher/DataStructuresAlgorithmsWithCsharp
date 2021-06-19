@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlgorithmExpert
+namespace DataStructuresAlgorithms
 {
     public static class ValidateSubsequence {
         // O(n) time | O(1) space - where n is the length of the array

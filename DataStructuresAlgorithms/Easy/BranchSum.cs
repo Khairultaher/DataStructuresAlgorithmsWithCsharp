@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlgorithmExpert.Easy
+namespace DataStructuresAlgorithms.Easy
 {
     public  class BranchSum {
         public List<int> BranchSums(BinaryTree root) {
