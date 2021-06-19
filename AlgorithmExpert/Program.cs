@@ -36,6 +36,13 @@ namespace AlgorithmExpert
 
             #endregion
 
+            #region Caesar Cipher Encryptor 
+            String text = "ATTACKATONCE";
+            int s = 4;
+            // EXXEGOEXSRGI
+            var res = CaesarCipherEncryptor.Encrypt(text, s);
+
+            #endregion
             Console.ReadLine();
         }
     }

@@ -33,17 +33,17 @@ namespace AlgorithmExpert.Easy
                 ShiftAndUpdate(threeLargest, num, 0);
             }
         }
-        public static void ShiftAndUpdate(int[] array, int num, int idx)
+        public static void ShiftAndUpdate(int[] threeLargest, int num, int idx)
         {
             for (int i = 0; i <= idx; i++)
             {
                 if (i == idx)
                 {
-                    array[i] = num;
+                    threeLargest[i] = num;
                 }
                 else
                 {
-                    array[i] = array[i + 1];
+                    threeLargest[i] = threeLargest[i + 1];
                 }
             }
         }
