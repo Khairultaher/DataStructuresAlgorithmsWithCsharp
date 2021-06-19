@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataStructuresAlgorithms.Easy
+namespace DataStructuresAlgorithms.Basic
 {
     public class BinaryTree
     {

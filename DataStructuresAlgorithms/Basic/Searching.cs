@@ -8,21 +8,32 @@ namespace DataStructuresAlgorithms.Basic
 {
     public static class Searching
     {
-        // O(log(n)) time | O(n)
-        public static int BynarySearch(int[] arr, int target)
+        // O(n) time | O(1)
+        public static int LinearSearch(int[] arr, int target)
         {
-            Array.Sort(arr);
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] == target) 
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+        // O(log(n)) time | O(1) space
+        public static int BynarySearchIteration(int[] arr, int target)
+        {
+            //Array.Sort(arr);
             int min = 0; int max = arr.Length - 1;
             while (min <= max)
             {
                 int middle = (min + max) / 2;
-                int match = arr[middle];
-                if (target == match)
+                if (target == arr[middle])
                 {
-                    return arr[middle];
+                    return middle;
                 }
-
-                if (target > arr[middle])
+                else if (target > arr[middle])
                 {
                     min = middle + 1;
                 }
@@ -35,5 +46,34 @@ namespace DataStructuresAlgorithms.Basic
             return -1;
         }
 
+
+        // O(log(n)) time | O(log(n)) space
+        public static int BynarySearchRecursive(int[] arr, int target)
+        {
+            //Array.Sort(arr);
+            int min = 0; int max = arr.Length - 1;
+            if (min > max)
+            {
+                return -1;
+            }
+            else 
+            {
+                int middle = (min + max) / 2;
+                if (target == arr[middle])
+                {
+                    return middle;
+                }
+                else if (target > arr[middle])
+                {
+                    var right = arr.Skip(middle).ToArray();
+                    return BynarySearchRecursive(right, target);
+                }
+                else
+                {
+                    var left = arr.Skip(0).Take(middle).ToArray();
+                    return BynarySearchRecursive(left, target);
+                }
+            }
+        }
     }
 }
