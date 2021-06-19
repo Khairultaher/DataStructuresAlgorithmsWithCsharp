@@ -8,26 +8,6 @@ namespace DataStructuresAlgorithms.Basic
 {
     public static class Sorting
     {
-        // O(n^2)
-        public static int[] BubbleSort(int[] arr)
-        {
-
-            int n = arr.Length - 1;
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n - i; j++)
-                {
-                    if (arr[j] > arr[j + 1])
-                    {
-                        var temp = arr[j];
-                        arr[j] = arr[j + 1];
-                        arr[j + 1] = temp;
-                    }
-                }
-            }
-
-            return arr;
-        }
 
         // O(n^2)
         public static int[] SelectionSort(int[] arr)
@@ -68,6 +48,27 @@ namespace DataStructuresAlgorithms.Basic
             return arr;
         }
 
+        // O(n^2)
+        public static int[] BubbleSort(int[] arr)
+        {
+
+            int n = arr.Length - 1;
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n - i; j++)
+                {
+                    if (arr[j] > arr[j + 1])
+                    {
+                        var temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+
+            return arr;
+        }
+
         // O(nlog(n))
         public static List<int> MergeSort(List<int> unsorted)
         {
@@ -94,7 +95,6 @@ namespace DataStructuresAlgorithms.Basic
 
             return Merge(left, right);
         }
-
         public static List<int> Merge(List<int> left, List<int> right)
         {
             List<int> result = new List<int>();
