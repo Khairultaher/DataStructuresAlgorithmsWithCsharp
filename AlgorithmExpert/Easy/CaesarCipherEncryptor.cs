@@ -26,7 +26,7 @@ namespace AlgorithmExpert.Easy
                                         : (char)(96 + newLetterCode % 122);
         }
 
-        // Encrypts text using a shift od s
+        // Encrypts text using a shift ods
         public static StringBuilder Encrypt1(String text, int s)
         {
             StringBuilder result = new StringBuilder();
