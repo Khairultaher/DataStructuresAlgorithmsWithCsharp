@@ -9,7 +9,7 @@ namespace DataStructuresAlgorithms.Basic
     public class DynamicProgramming
     {
         // Memoization
-        public static long GetNthFibonacciMemo(int n)
+        public static long NthFibonacciNoWithMemoization(int n)
         {
             long[] arr = new long[n + 1];
             long res = 0;
@@ -21,7 +21,7 @@ namespace DataStructuresAlgorithms.Basic
                 }
                 else
                 {
-                    res = GetNthFibonacciMemo(n - 1) + GetNthFibonacciMemo(n - 2);
+                    res = NthFibonacciNoWithMemoization(n - 1) + NthFibonacciNoWithMemoization(n - 2);
                 }
                 arr[n] = res;
             }
@@ -30,7 +30,7 @@ namespace DataStructuresAlgorithms.Basic
         }
 
         // Tabulation
-        public static long GetNthFibonacciTabu(int n)
+        public static long NthFibonacciWithTabulation(int n)
         {
             long[] arr = new long[n + 1];
             arr[0] = 0; arr[1] = 1;
