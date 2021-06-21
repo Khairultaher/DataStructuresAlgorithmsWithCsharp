@@ -27,11 +27,6 @@ namespace DataStructuresAlgorithms
             //Console.WriteLine(res);
             #endregion
 
-            #region Sorting/Searching
-            List<int> arr = new List<int> { 6, 4, 5, 3, 2, 7, 1 };
-            var res1 = Sorting.MergeSort(arr);
-            #endregion
-
             #region Dynamic Programing
             //var res = NthFibonacci.GetNthFibonacciMemo(6);
 
@@ -49,6 +44,14 @@ namespace DataStructuresAlgorithms
             //var res = Recursion.FactorialIterative(5);
             #endregion
 
+            #region Sorting/Searching
+            List<int> arry = new List<int> { 6, 4, 5, 3, 2, 7, 1 };
+            arry.MergeSort2();
+            foreach (var item in arry)
+            {
+                Console.WriteLine(item);
+            }
+            #endregion
 
             Console.ReadLine();
         }
