@@ -45,14 +45,31 @@ namespace DataStructuresAlgorithms
             #endregion
 
             #region Sorting/Searching
-            List<int> arry = new List<int> { 6, 4, 5, 3, 2, 7, 1 };
-            arry.MergeSort2();
-            foreach (var item in arry)
-            {
-                Console.WriteLine(item);
-            }
+            //List<int> arry = new List<int> { 6, 4, 5, 3, 2, 7, 1 };
+            //arry.MergeSort2();
+            //foreach (var item in arry)
+            //{
+            //    Console.WriteLine(item);
+            //}
             #endregion
 
+            #region LinkList
+            LinkedList l = new LinkedList();
+            l.addLast(7);
+            l.addLast(4);
+            l.addLast(12);
+            l.addLast(8);
+            l.addLast(3);
+            l.display();
+            Console.WriteLine("Size: " + l.length());
+            l.addAny(20, 3);
+            l.display();
+            Console.WriteLine("Size: " + l.length());
+            l.addAny(40, 5);
+            l.display();
+            Console.WriteLine("Size: " + l.length());
+
+            #endregion
             Console.ReadLine();
         }
     }
