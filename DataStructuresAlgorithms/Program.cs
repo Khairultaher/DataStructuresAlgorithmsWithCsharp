@@ -54,7 +54,25 @@ namespace DataStructuresAlgorithms
             #endregion
 
             #region LinkList
-            LinkedList l = new LinkedList();
+            //LinkedList l = new LinkedList();
+            //l.addLast(7);
+            //l.addLast(4);
+            //l.addLast(12);
+            //l.addLast(8);
+            //l.addLast(3);
+            //l.display();
+            //Console.WriteLine("Size: " + l.length());
+            //l.addAny(20, 3);
+            //l.display();
+            //Console.WriteLine("Size: " + l.length());
+            //l.addAny(40, 5);
+            //l.display();
+            //Console.WriteLine("Size: " + l.length());
+
+            #endregion
+
+            #region CircularLinkedList
+            CircularLinkedList l = new CircularLinkedList();
             l.addLast(7);
             l.addLast(4);
             l.addLast(12);
@@ -62,14 +80,12 @@ namespace DataStructuresAlgorithms
             l.addLast(3);
             l.display();
             Console.WriteLine("Size: " + l.length());
-            l.addAny(20, 3);
+            int element = l.removeAny(3);
+            Console.WriteLine("Removed Element: " + element);
             l.display();
             Console.WriteLine("Size: " + l.length());
-            l.addAny(40, 5);
-            l.display();
-            Console.WriteLine("Size: " + l.length());
-
             #endregion
+
             Console.ReadLine();
         }
     }
