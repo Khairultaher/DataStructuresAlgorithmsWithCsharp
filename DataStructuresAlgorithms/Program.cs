@@ -72,7 +72,22 @@ namespace DataStructuresAlgorithms
             #endregion
 
             #region CircularLinkedList
-            CircularLinkedList l = new CircularLinkedList();
+            //CircularLinkedList l = new CircularLinkedList();
+            //l.addLast(7);
+            //l.addLast(4);
+            //l.addLast(12);
+            //l.addLast(8);
+            //l.addLast(3);
+            //l.display();
+            //Console.WriteLine("Size: " + l.length());
+            //int element = l.removeAny(3);
+            //Console.WriteLine("Removed Element: " + element);
+            //l.display();
+            //Console.WriteLine("Size: " + l.length());
+            #endregion
+
+            #region DoublyLinkedList
+            Basic.DoublyLinkedList l = new Basic.DoublyLinkedList();
             l.addLast(7);
             l.addLast(4);
             l.addLast(12);
