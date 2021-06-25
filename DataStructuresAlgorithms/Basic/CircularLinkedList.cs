@@ -28,12 +28,10 @@ namespace DataStructuresAlgorithms.Basic
             tail = null;
             size = 0;
         }
-
         public int length()
         {
             return size;
         }
-
         public bool isEmpty()
         {
             return size == 0;
@@ -54,7 +52,6 @@ namespace DataStructuresAlgorithms.Basic
             tail = newest;
             size = size + 1;
         }
-
         public void addFirst(int e)
         {
             Node newest = new Node(e, null);
@@ -130,7 +127,6 @@ namespace DataStructuresAlgorithms.Basic
             size = size - 1;
             return e;
         }
-
         public int removeAny(int position)
         {
             if (position <= 0 || position >= size - 1)
@@ -150,7 +146,6 @@ namespace DataStructuresAlgorithms.Basic
             size = size - 1;
             return e;
         }
-
         public void display()
         {
             Node p = head;

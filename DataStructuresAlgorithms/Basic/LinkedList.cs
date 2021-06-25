@@ -8,13 +8,20 @@ namespace DataStructuresAlgorithms.Basic
 {
     public class Node
     {
-        //public Node prev;
+        public Node prev;
         public int element;
         public Node next;
         public Node(int e, Node n)
         {
             element = e;
             next = n;
+        }
+
+        public Node(int e, Node n, Node p)
+        {
+            element = e;
+            next = n;
+            prev = p;
         }
     }
 
