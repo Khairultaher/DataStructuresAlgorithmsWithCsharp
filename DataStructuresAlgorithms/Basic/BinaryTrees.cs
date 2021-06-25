@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataStructuresAlgorithms.Basic
 {
-    class BinaryTrees
+    public class BinaryTrees
     {
+
     }
 }
