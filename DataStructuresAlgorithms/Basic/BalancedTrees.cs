@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataStructuresAlgorithms.Basic
 {
-    class BalancedTrees
+    public class BalancedTrees
     {
+
     }
 }
