@@ -184,6 +184,29 @@ namespace DataStructuresAlgorithms
             //Console.WriteLine("Last Element: " + d.last());
             #endregion
 
+            #region BinarySearchTree
+            //BinarySearchTree B = new BinarySearchTree();
+            //B.IterativeInsert(B.root, 50);
+            //B.IterativeInsert(B.root, 30);
+            //B.IterativeInsert(B.root, 80);
+            //B.IterativeInsert(B.root, 10);
+            //B.IterativeInsert(B.root, 40);
+            //B.IterativeInsert(B.root, 60);
+            //B.IterativeInsert(B.root, 90);
+            //Console.WriteLine("Inorder Traversal");
+            //B.inorder(B.root);
+            //Console.WriteLine();
+            //Console.WriteLine("Pre Order Traversal");
+            //B.preorder(B.root);
+            //Console.WriteLine();
+            //Console.WriteLine("Post Order Traversal");
+            //B.postorder(B.root);
+            //Console.WriteLine();
+
+            //Console.WriteLine("Number of Node: " + B.count(B.root));
+            //Console.WriteLine("Height: " + (B.height(B.root) - 1));
+            #endregion
+
             Console.ReadLine();
         }
     }
