@@ -87,17 +87,17 @@ namespace DataStructuresAlgorithms.Basic
             int[] visited = new int[vertices];
             Console.Write(i + " ");
             visited[i] = 1;
-            q.enqueue(i);
-            while (!q.isEmpty())
+            q.Enqueue(i);
+            while (!q.IsEmpty())
             {
-                i = q.dequeue();
+                i = q.Dequeue();
                 for (int j = 0; j < vertices; j++)
                 {
                     if (adjMat[i, j] == 1 && visited[j] == 0)
                     {
                         Console.Write(j + " ");
                         visited[j] = 1;
-                        q.enqueue(j);
+                        q.Enqueue(j);
                     }
                 }
             }
