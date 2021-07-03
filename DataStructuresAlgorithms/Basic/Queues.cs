@@ -87,28 +87,29 @@ namespace DataStructuresAlgorithms.Basic
             size = 0;
         }
 
-        public int length()
+        public int Length()
         {
             return size;
         }
 
-        public bool isEmpty()
+        public bool IsEmpty()
         {
             return size == 0;
         }
 
-        public void enqueue(int e)
+        public void Enqueue(int e)
         {
             Node newest = new Node(e, null);
             if (isEmpty())
                 front = newest;
             else
                 rear.next = newest;
+
             rear = newest;
             size = size + 1;
         }
 
-        public int dequeue()
+        public int Dequeue()
         {
             if (isEmpty())
             {
@@ -123,7 +124,7 @@ namespace DataStructuresAlgorithms.Basic
             return e;
         }
 
-        public void display()
+        public void Display()
         {
             Node p = front;
             while (p != null)
