@@ -27,13 +27,13 @@ namespace DataStructuresAlgorithms.Basic
         public void Insert(int element)
         {
             int i = HashCode(element);
-            hashtable[i].insertsorted(element);
+            hashtable[i].InsertSorted(element);
         }
 
         public bool Search(int key)
         {
             int i = HashCode(key);
-            return hashtable[i].search(key) != -1;
+            return hashtable[i].Search(key) != -1;
         }
 
         public void Display()
@@ -41,7 +41,7 @@ namespace DataStructuresAlgorithms.Basic
             for (int i = 0; i < hashtablesize; i++)
             {
                 Console.Write("[" + i + "]");
-                hashtable[i].display();
+                hashtable[i].Display();
             }
             Console.WriteLine();
         }

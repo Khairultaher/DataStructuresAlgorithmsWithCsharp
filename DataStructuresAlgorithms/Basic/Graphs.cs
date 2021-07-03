@@ -18,27 +18,22 @@ namespace DataStructuresAlgorithms.Basic
             adjMat = new int[n, n];
             visited = new int[vertices];
         }
-
         public void InsertEdge(int u, int v, int x)
         {
             adjMat[u, v] = x;
         }
-
         public void RemoveEdge(int u, int v)
         {
             adjMat[u, v] = 0;
         }
-
         public bool ExistEdge(int u, int v)
         {
             return adjMat[u, v] != 0;
         }
-
         public int VertexCount()
         {
             return vertices;
         }
-
         public int EdgeCount()
         {
             int count = 0;
@@ -50,7 +45,6 @@ namespace DataStructuresAlgorithms.Basic
             }
             return count;
         }
-
         public void Edges()
         {
             Console.WriteLine("Edges:");
@@ -61,7 +55,6 @@ namespace DataStructuresAlgorithms.Basic
                         Console.WriteLine(i + "--" + j);
             }
         }
-
         public int Outdegree(int v)
         {
             int count = 0;
@@ -70,7 +63,6 @@ namespace DataStructuresAlgorithms.Basic
                     count = count + 1;
             return count;
         }
-
         public int Indegree(int v)
         {
             int count = 0;
@@ -79,7 +71,6 @@ namespace DataStructuresAlgorithms.Basic
                     count = count + 1;
             return count;
         }
-
         public void Display()
         {
             for (int i = 0; i < vertices; i++)
