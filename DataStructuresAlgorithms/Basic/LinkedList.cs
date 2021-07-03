@@ -38,19 +38,19 @@ namespace DataStructuresAlgorithms.Basic
             size = 0;
         }
 
-        public int length()
+        public int Length()
         {
             return size;
         }
 
-        public bool isEmpty()
+        public bool IsEmpty()
         {
             return size == 0;
         }
-        public void addFirst(int e)
+        public void AddFirst(int e)
         {
             Node newest = new Node(e, null);
-            if (isEmpty())
+            if (IsEmpty())
             {
                 head = newest;
                 tail = newest;
@@ -62,10 +62,10 @@ namespace DataStructuresAlgorithms.Basic
             }
             size = size + 1;
         }
-        public void addLast(int e)
+        public void AddLast(int e)
         {
             Node newest = new Node(e, null);
-            if (isEmpty())
+            if (IsEmpty())
             {
                 head = newest;
                 tail = newest;
@@ -78,8 +78,7 @@ namespace DataStructuresAlgorithms.Basic
 
             size = size + 1;
         }
-
-        public void addAny(int e, int position)
+        public void AddAny(int e, int position)
         {
             if (position <= 0 || position >= size)
             {
@@ -98,10 +97,9 @@ namespace DataStructuresAlgorithms.Basic
             p.next = newest;
             size = size + 1;
         }
-
-        public int removeFirst()
+        public int RemoveFirst()
         {
-            if (isEmpty())
+            if (IsEmpty())
             {
                 Console.WriteLine("List is Empty");
                 return -1;
@@ -111,14 +109,14 @@ namespace DataStructuresAlgorithms.Basic
                 int e = head.element;
                 head = head.next;
                 size = size - 1;
-                if (isEmpty())
+                if (IsEmpty())
                     tail = null;
                 return e;
             }
         }
-        public int removeLast()
+        public int RemoveLast()
         {
-            if (isEmpty())
+            if (IsEmpty())
             {
                 Console.WriteLine("List is Empty");
                 return -1;
@@ -137,8 +135,7 @@ namespace DataStructuresAlgorithms.Basic
             size = size - 1;
             return e;
         }
-
-        public int removeAny(int position)
+        public int RemoveAny(int position)
         {
             if (position <= 0 || position >= size - 1)
             {
@@ -157,8 +154,7 @@ namespace DataStructuresAlgorithms.Basic
             size = size - 1;
             return e;
         }
-
-        public int search(int key)
+        public int Search(int key)
         {
             Node p = head;
             int index = 0;
@@ -171,10 +167,10 @@ namespace DataStructuresAlgorithms.Basic
             }
             return -1;
         }
-        public void insertsorted(int e)
+        public void InsertSorted(int e)
         {
             Node newest = new Node(e, null);
-            if (isEmpty())
+            if (IsEmpty())
                 head = newest;
             else
             {
@@ -198,7 +194,7 @@ namespace DataStructuresAlgorithms.Basic
             }
             size = size + 1;
         }
-        public void display()
+        public void Display()
         {
             Node p = head;
             while (p != null)
