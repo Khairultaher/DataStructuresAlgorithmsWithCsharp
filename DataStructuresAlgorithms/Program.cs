@@ -196,8 +196,6 @@ namespace DataStructuresAlgorithms
             #endregion
 
             #region Easy
-            //ReverseAnArray.BruteForce();
-            ReverseAnArray.UsingSwap();
             //TwoNumberSum.BruteForce();
 
             #endregion

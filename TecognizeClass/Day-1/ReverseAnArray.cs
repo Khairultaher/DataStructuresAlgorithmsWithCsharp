@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataStructuresAlgorithms.Day_1
+namespace TecognizeClass.Day_1
 {
     public static class ReverseAnArray
     {
