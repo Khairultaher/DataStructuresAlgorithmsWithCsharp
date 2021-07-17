@@ -100,7 +100,7 @@ namespace DataStructuresAlgorithms.Basic
         public void Enqueue(int e)
         {
             Node newest = new Node(e, null);
-            if (isEmpty())
+            if (IsEmpty())
                 front = newest;
             else
                 rear.next = newest;
@@ -111,7 +111,7 @@ namespace DataStructuresAlgorithms.Basic
 
         public int Dequeue()
         {
-            if (isEmpty())
+            if (IsEmpty())
             {
                 Console.WriteLine("Queue is Empty");
                 return -1;
@@ -119,7 +119,7 @@ namespace DataStructuresAlgorithms.Basic
             int e = front.element;
             front = front.next;
             size = size - 1;
-            if (isEmpty())
+            if (IsEmpty())
                 rear = null;
             return e;
         }
