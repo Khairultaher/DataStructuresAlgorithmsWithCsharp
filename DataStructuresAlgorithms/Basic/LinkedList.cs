@@ -27,9 +27,9 @@ namespace DataStructuresAlgorithms.Basic
 
     public class LinkedList
     {
-        private Node head;
-        private Node tail;
-        private int size;
+        public Node head;
+        public Node tail;
+        public int size;
 
         public LinkedList()
         {
@@ -42,7 +42,6 @@ namespace DataStructuresAlgorithms.Basic
         {
             return size;
         }
-
         public bool IsEmpty()
         {
             return size == 0;
