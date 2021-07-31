@@ -25,12 +25,12 @@ namespace DataStructuresAlgorithms.Easy
             int sum = 0;
             for (int i = 0; i < s.Length; i++)
             {
-                sum += RomanToInt2(s, i, map) * map[s[i]];
+                sum += RomanToIntHelper(s, i, map) * map[s[i]];
             }
             //return sum;
             Console.WriteLine(sum);
         }
-        public static int RomanToInt2(string s, int i, Dictionary<char, int> map)
+        public static int RomanToIntHelper(string s, int i, Dictionary<char, int> map)
         {
             if (i == s.Length - 1) return 1;
 

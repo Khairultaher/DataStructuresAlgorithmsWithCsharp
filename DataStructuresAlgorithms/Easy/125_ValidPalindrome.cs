@@ -9,32 +9,28 @@ namespace DataStructuresAlgorithms.Easy
     public static class ValidPalindrome
     {
         // O(n) time | O(1) space
-        public static bool IsPalindrome2(string s)
+        public static bool IsPalindrome(string s)
         {
-            if (String.IsNullOrEmpty(s)) return true;
+            if (String.IsNullOrEmpty(s)) 
+                return true;
 
             var start = 0; var end = s.Length - 1;
             while (start < end)
             {
                 if (!Char.IsLetterOrDigit(s[start]))
                 {
-                    start++;
-                    continue;
+                    start++; continue;
                 }
 
                 if (!Char.IsLetterOrDigit(s[end]))
                 {
-                    end--;
-                    continue;
+                    end--; continue;
                 }
 
-                if (Char.ToLower(s[start]) != Char.ToLower(s[end]))
-                {
+                if (Char.ToLower(s[start]) != Char.ToLower(s[end])) 
                     return false;
-                }
 
-                start++;
-                end--;
+                start++; end--;
             }
             return true;
         }
