@@ -13,8 +13,7 @@ namespace DataStructuresAlgorithms.Easy
         {
             if (String.IsNullOrEmpty(s)) return true;
 
-            var start = 0;
-            var end = s.Length - 1;
+            var start = 0; var end = s.Length - 1;
             while (start < end)
             {
                 if (!Char.IsLetterOrDigit(s[start]))
