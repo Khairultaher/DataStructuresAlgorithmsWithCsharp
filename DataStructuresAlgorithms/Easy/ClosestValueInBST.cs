@@ -12,6 +12,9 @@ namespace DataStructuresAlgorithms.Easy
         {
             return FindClosestValueInBst1(tree, target, Int32.MaxValue);
         }
+
+        // Avarage: O(log(n)) time | O(log(n)) space
+        // Wrost: O(n) time | O(n) space
         public static int FindClosestValueInBst1(BST tree, int target, double closest)
         {
             if (Math.Abs(target - closest) > Math.Abs(target - tree.Value))
@@ -33,6 +36,8 @@ namespace DataStructuresAlgorithms.Easy
             }
         }
 
+        // Avarage: O(log(n)) time | O(1) space
+        // Wrost: O(n) time | O(1) space
         public static int FindClosestValueInBst2(BST tree, int target, double closest)
         {
             BST currentNode = tree;

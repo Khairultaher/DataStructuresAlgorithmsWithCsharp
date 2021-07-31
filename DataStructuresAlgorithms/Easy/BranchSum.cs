@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace DataStructuresAlgorithms.Easy
 {
-    public  class BranchSum {
-        public List<int> BranchSums(BinaryTree root) {
+    public  class BranchSum 
+    {
+        // Avarage: O(n) time | O(n) space
+        public List<int> GetBranchSum(BinaryTree root) {
             List<int> sums = new List<int>();
             CalculateBranchSums(root, 0, sums);
             return sums;
