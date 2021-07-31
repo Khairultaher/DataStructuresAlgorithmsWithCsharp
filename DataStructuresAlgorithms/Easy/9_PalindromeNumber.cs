@@ -6,22 +6,11 @@ using System.Threading.Tasks;
 
 namespace DataStructuresAlgorithms.Easy
 {
-    public static class Palindrome
+    public static class PalindromeNumber
     {
-        // O(n) time | O(n) space
-        public static bool IsPalindrome1(string str)
+        public static bool IsPalindrome2(int x)
         {
-            StringBuilder reversedstring = new StringBuilder();
-            for (int i = str.Length - 1; i >= 0; i--)
-            {
-                reversedstring.Append(str[i]);
-            }
-            return str.Equals(reversedstring.ToString());
-        }
-
-        // O(n) time | O(1) space
-        public static bool IsPalindrome2(string str)
-        {
+            string str = x.ToString();
             int leftIdx = 0;
             int rightIdx = str.Length - 1;
             while (leftIdx < rightIdx)
