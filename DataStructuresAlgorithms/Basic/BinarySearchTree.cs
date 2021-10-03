@@ -91,6 +91,8 @@ namespace DataStructuresAlgorithms.Basic
         {
             Node p = root;
             Node pp = null;
+
+            // find the node to be deleted
             while (p != null && p.element != e)
             {
                 pp = p;
@@ -99,8 +101,10 @@ namespace DataStructuresAlgorithms.Basic
                 else
                     p = p.right;
             }
+
             if (p == null)
                 return false;
+
             if (p.left != null && p.right != null)
             {
                 Node s = p.left;
@@ -114,11 +118,13 @@ namespace DataStructuresAlgorithms.Basic
                 p = s;
                 pp = ps;
             }
+
             Node c = null;
             if (p.left != null)
                 c = p.left;
             else
                 c = p.right;
+
             if (p == root)
                 root = null;
             else
@@ -131,7 +137,48 @@ namespace DataStructuresAlgorithms.Basic
             return true;
         }
 
+        public Node DeleteRecurcive(Node root, int e)
+        {
+            if (root is null) return root;
 
+            // find out the to be deleted
+            if (e > root.left.element)
+            {
+                root.right = DeleteRecurcive(root.right, e);
+            }
+            else if (e < root.right.element)
+            {
+                root.left = DeleteRecurcive(root.left, e);
+            }
+            else //else we found the key
+            {
+                //case 1: Node to be deleted has no children
+                if (root.left == null && root.right == null)
+                {
+                    //update root to null
+                    root = null;
+                }
+                //case 2 : node to be deleted has two children
+                else if (root.left != null && root.right != null)
+                {
+                    Node maxNode = root.right;
+                    while (maxNode.left != null)
+                    {
+                        maxNode = maxNode.left;
+                    }
+                    //copy the value
+                    root.element = maxNode.element;
+                    root.right = DeleteRecurcive(root.right, maxNode.element);
+                }
+                //node to be deleted has one children
+                else
+                {
+                    var child = root.left != null ? root.left : root.right;
+                    root = child;
+                }
+            }
+            return root;
+        }
         public void inorder(Node temproot)
         {
             if (temproot != null)
