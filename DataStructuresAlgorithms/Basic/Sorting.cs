@@ -89,8 +89,10 @@ namespace DataStructuresAlgorithms.Basic
         {
             int i = left;
             int j = mid + 1;
+
             int k = left;
             int[] B = new int[right + 1];
+
             while (i <= mid && j <= right)
             {
                 if (A[i] < A[j])
@@ -117,6 +119,7 @@ namespace DataStructuresAlgorithms.Basic
                 j = j + 1;
                 k = k + 1;
             }
+
             for (int x = left; x < right + 1; x++)
             {
                 A[x] = B[x];

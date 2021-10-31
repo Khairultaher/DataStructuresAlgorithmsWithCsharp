@@ -87,7 +87,7 @@ namespace DataStructuresAlgorithms.Basic
             return temproot;
         }
 
-        public bool delete(int e)
+        public bool Delete(int e)
         {
             Node p = root;
             Node pp = null;
